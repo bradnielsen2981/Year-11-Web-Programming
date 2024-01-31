@@ -1,5 +1,5 @@
 body { 
-    background-color: #6c5ce5; 
+    background-color: #b0a6fa; 
     margin: 0px;
     background-image: url();
     background-size: cover;
@@ -14,7 +14,8 @@ a:hover
     color:aquamarine; 
 }
 
-h1 { font-size: 48px; }
+h1 { font-size: 48px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
 .block {
     background:white;
@@ -59,5 +60,5 @@ h1 { font-size: 48px; }
   }
   
   .menu .active {
-    background-color: #04AA6D;
+    background-color: #5814f8;
   }
