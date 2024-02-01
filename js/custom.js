@@ -10,3 +10,5 @@ for (i=0; i<lucky_number; i++)
         console.log("3 is awesome");
     }
 }
+
+
