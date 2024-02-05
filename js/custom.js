@@ -13,5 +13,12 @@ for (i=0; i<lucky_number; i++)
 
 //DOCUMENT OBJECT MODEL - ALL ELEMENTS ARE TREATED AT OBJECTS!!!
 
+clickme.onclick = showfuture;
+function showfuture()
+{
+    alert("Your future is bleak!");
+}
+
+
 
 
