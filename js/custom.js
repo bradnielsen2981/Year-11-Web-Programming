@@ -16,7 +16,14 @@ for (i=0; i<lucky_number; i++)
 clickme.onclick = showfuture;
 function showfuture()
 {
-    alert("Your future is bleak!");
+    futurelist = ['Yes, you should ask her out','No, dont leave study until later','Yes, work your assignment','Yes, get up now!','No dont share your music taste!'];
+    let randomIndex = Math.floor(Math.random() * futurelist.length); 
+    console.log(randomIndex);
+
+    let randomItem = futurelist[randomIndex];
+    
+    answer.textContent = randomItem;
+
 }
 
 
