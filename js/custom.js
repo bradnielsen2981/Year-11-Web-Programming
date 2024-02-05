@@ -1,4 +1,4 @@
-alert("I AM ALIVE!!")
+alert("I AM ALIVE!!");
 message = "Hello World";
 lucky_number = 7;
 console.log(message + " your lucky number is: " + String(lucky_number));
@@ -10,5 +10,8 @@ for (i=0; i<lucky_number; i++)
         console.log("3 is awesome");
     }
 }
+
+//DOCUMENT OBJECT MODEL - ALL ELEMENTS ARE TREATED AT OBJECTS!!!
+
 
 
