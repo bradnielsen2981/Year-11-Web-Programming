@@ -17,13 +17,13 @@ clickme.onclick = showfuture;
 function showfuture()
 {
     futurelist = ['Yes, you should ask her out','No, dont leave study until later','Yes, work your assignment','Yes, get up now!','No dont share your music taste!'];
+    
     let randomIndex = Math.floor(Math.random() * futurelist.length); 
     console.log(randomIndex);
 
     let randomItem = futurelist[randomIndex];
     
-    answer.textContent = randomItem;
-
+    document.getElementById('answer').textContent = randomItem;
 }
 
 
