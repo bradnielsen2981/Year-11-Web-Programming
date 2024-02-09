@@ -1,0 +1,30 @@
+//Problem Decomposition
+BEGIN
+    INPUT move
+    WHILE move != 'exit'
+        move_list = ['paper','scissors','rock']
+        IF move IS NOT in move_list THEN
+            OUTPUT 'move is incorrect'
+        ELSE
+            SET random_int = RANDOM(0,2) 
+            SET computer_move = move_list[random_int]
+            SET WINNER = logic(move,computer) 
+            OUTPUT computer_move, WINNER
+        END IF
+        INPUT move
+    END WHILE
+END
+
+BEGIN FUNCTION logic(move,computer)
+    IF move == computer THEN
+        RETURN draw
+    IF (move == paper AND computer == scissors) 
+    OR
+    (move == scissor AND computer == rock)
+    OR
+    (move == rock AND computer == paper)
+        RETURN computer wins
+    ELSE
+        RETURN player wins
+    END IF
+END FUNCTION
