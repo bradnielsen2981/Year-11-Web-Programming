@@ -1,8 +1,8 @@
 alert("PAPER SCISSORS ROCK");
 
 paper.onclick = () => logic('paper');
-rock.onclick = () => logic('scissors');
-scissors.onclick = () => logic('paper');
+rock.onclick = () => logic('rock');
+scissors.onclick = () => logic('scissors');
 
 function getRandomMove() {
     let moves = ['paper', 'scissors', 'rock'];
