@@ -4,9 +4,17 @@ paper.onclick = () => logic('paper');
 rock.onclick = () => logic('scissors');
 scissors.onclick = () => logic('paper');
 
+function getRandomMove() {
+    let moves = ['paper', 'scissors', 'rock'];
+    let randomIndex = Math.floor(Math.random() * moves.length);
+    return moves[randomIndex]; 
+}
+
 function logic(move)
 {
+    let computermove = getRandomMove()
     alert(move);
+    alert(computermove);
 }
 
 /*
