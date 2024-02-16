@@ -15,20 +15,17 @@ function logic(move)
     let computermove = getRandomMove()
     alert(move);
     alert(computermove);
+    if (move == computermove)
+    {
+        alert("Draw");
+    } 
+    else if ((move == 'paper' && computermove == 'scissors') ||
+               (move == 'scissors' && computermove == 'rock') ||
+               (move == 'rock' && computermove == 'paper')) 
+    {
+        alert('Computer wins');
+    } 
+    else {
+        alert('Player wins');
+    }
 }
-
-/*
-BEGIN FUNCTION logic(move)
-    IF move == computer THEN
-        RETURN draw
-    IF (move == paper AND computer == scissors) 
-    OR
-    (move == scissor AND computer == rock)
-    OR
-    (move == rock AND computer == paper)
-        RETURN computer wins
-    ELSE
-        RETURN player wins
-    END IF
-END FUNCTION
-*/
