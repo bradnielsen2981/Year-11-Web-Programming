@@ -1,0 +1,29 @@
+
+#PROBLEM DECOMPOSITION
+
+BEGIN
+    GRID = [ [0,0,0,0],  #ROW 0
+             [0,0,0,0],  #ROW 1
+             [0,0,0,0],  #ROW 2
+             [0,0,0,0]]  #ROW 3
+    // image1, image2, image3 related to grid position
+
+    SET gridpositionlist = [[0,0], [0,1], [0,2], [0,3],..(all grid positions)]
+    SET imagenumberlist = [0,1,2,..15]
+
+    FOR i = 0 to 14
+        SET gridposition = random item from gridpositionlist
+        REMOVE gridposition from the gridpositionlist
+
+        SET image = random item from imagenumberlist
+        REMOVE image from imagenumberlist
+
+        GRID[gridposition] = "image" + image + .jpg 
+
+    END FOR
+
+    #empty space
+    #player can move piece one at a time
+    #pieces randomised into their positions
+END
+

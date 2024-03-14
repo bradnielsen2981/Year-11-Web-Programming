@@ -1,0 +1,41 @@
+SELECTION SORT
+BEGIN
+    LIST = [1,13,2,6,4,19]
+    SORTED_LIST = []
+    WHILE length of LIST > 0
+        set largest = 0
+        FOR number in LIST
+            IF number > largest
+                largest = number
+            END IF
+        END FOR
+        add largest to SORTED_LIST
+        remove largest from LIST 
+    END WHILE
+    OUTPUT SORTED_LIST
+END
+
+Accuracy, Reliability, Maintainability, Efficiency, Effectiveness and Useability
+
+
+
+#BUBBLE SORT
+#swap the numbers if one number > the previous number
+BEGIN       
+    LIST = [1,13,2,6,4,19]
+    WHILE sorted == FALSE
+        sorted = TRUE
+        FOR index = 1 to (length of LIST - 1)   index = 1,2,3,4,5
+
+            item = LIST[index]
+            previousitem = LIST[index -1]
+
+            IF (item > previousitem) THEN
+                LIST[index-1] = item
+                LIST[index] = previousitem
+                sorted = FALSE
+            END IF
+
+        END FOR
+    END WHILE
+END
