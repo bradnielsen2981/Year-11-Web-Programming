@@ -15,17 +15,23 @@ BEGIN
     OUTPUT SORTED_LIST
 END
 
-Accuracy, Reliability, Maintainability, Efficiency, Effectiveness and Useability
+ASSESSING CODE
 
-
+Accuracy - how accurate is the output from code
+Reliability - does code work the same each time 
+Maintainability - making readable with indents, commenting, structure into functions 
+Efficiency - overall system performance in running code
+Effectiveness - meeting its requirements
+Useability - checking user input, making it able to handle a range of situations and users.
 
 #BUBBLE SORT
 #swap the numbers if one number > the previous number
-BEGIN       
+BEGIN
+    SET sorted = False       
     LIST = [1,13,2,6,4,19]
     WHILE sorted == FALSE
         sorted = TRUE
-        FOR index = 1 to (length of LIST - 1)   index = 1,2,3,4,5
+        FOR index = 1 to (length of LIST - 1)   #index = 1,2,3,4,5
 
             item = LIST[index]
             previousitem = LIST[index -1]
@@ -39,3 +45,46 @@ BEGIN
         END FOR
     END WHILE
 END
+
+
+
+BEGIN
+    grid = [[0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [1,2,2,2,2,0,0],
+            [1,2,2,1,2,1,1]]
+
+    #Test horizontally for 4 in a row
+    FOR row in grid
+        sequence = [1,2]
+        FOR value in row
+            IF length of sequence > 0
+                previousvalue = sequence[0]
+                IF value == previousvalue THEN
+                    add value to sequence
+                    IF length of sequence == 4 THEN
+                        RETURN value wins    
+                    END IF
+                ELSE
+                    sequence = [value]
+            END IF
+        END FOR
+    END FOR
+END
+
+
+wordlist = ["baby","vampire","balloons"]
+
+FOR word in wordlist
+    print(word)
+END FOR
+
+FOR index = 0 to (length wordlist - 1)     #0 , 1, 2 
+    print(wordlist[index])
+END FOR
+
+
+
